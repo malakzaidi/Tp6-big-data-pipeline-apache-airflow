@@ -1,6 +1,6 @@
 # Airflow Big Data Pipeline
 
-Project demo showing a simple Big Data ETL pipeline orchestrated with Apache Airflow and Docker Compose.
+Activity 6 demo showing a simple Big Data ETL pipeline orchestrated with Apache Airflow and Docker Compose.
 
 ## Description
 
@@ -24,17 +24,26 @@ This repository contains a lightweight example pipeline that ingests, validates,
 ## Quick start (Docker Compose)
 
 1. From the project root, start the stack:
+   
+<img width="1461" height="175" alt="Screenshot from 2026-01-04 17-08-06" src="https://github.com/user-attachments/assets/3fafb3d1-a0fe-4a0f-8bd1-1fae3a95795c" />
 
-```bash
-docker compose up -d
-```
+- Vérification :
 
-2. Open the Airflow web UI (default): http://localhost:8080
+<img width="1697" height="108" alt="Screenshot from 2026-01-04 17-08-29" src="https://github.com/user-attachments/assets/012591e5-a1e2-422e-82e0-cb250d80abae" />
+
+2. Open the Airflow web UI (default): http://localhost:8080 :
+   
+<img width="1844" height="648" alt="Screenshot from 2026-01-04 17-13-34" src="https://github.com/user-attachments/assets/49726007-35bc-468b-a8e1-63ef630cf171" />
+
+<img width="1844" height="648" alt="Screenshot from 2026-01-04 17-14-05" src="https://github.com/user-attachments/assets/67d3644b-b5d5-4214-b927-ab317a45f9b3" />
+
 
 3. Trigger the DAG from the UI or let it run on its schedule (`@daily` by default).
 
 Notes:
 - The project mounts `./data` into the Airflow container at `/opt/airflow/data` so DAGs can read/write files.
+
+<img width="958" height="1071" alt="image" src="https://github.com/user-attachments/assets/9ca1c98a-c490-40e1-974e-c909e6288407" />
 
 ## DAGs overview
 
@@ -58,19 +67,15 @@ cat data/processed/sales_clean.csv
 cat data/curated/sales_curated.csv
 ```
 
-## Screenshots
-
-Place screenshots in a `docs/screenshots` (or `assets/screenshots`) folder and reference them below. Example placeholders:
-
 ### Screenshot: Airflow DAGs list
 
-![Airflow DAGs list](docs/screenshots/airflow_dags_list.png)
+<img width="1841" height="367" alt="Screenshot from 2026-01-04 18-21-45" src="https://github.com/user-attachments/assets/1f2d21d3-f54b-470f-8df7-b0470bdad6e9" />
+
 
 ### Screenshot: DAG graph view
 
-![DAG graph view](docs/screenshots/dag_graph_view.png)
+<img width="1861" height="514" alt="Screenshot from 2026-01-04 18-19-52" src="https://github.com/user-attachments/assets/7b99b242-9903-4e34-81ca-85af4c271898" />
 
-Replace the placeholder images with real screenshots. If you prefer another path, update the image links accordingly.
 
 ## How to test the pipeline
 
