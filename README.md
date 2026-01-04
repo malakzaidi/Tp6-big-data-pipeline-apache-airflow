@@ -2,9 +2,7 @@
 
 Activity 6 demo showing a simple Big Data ETL pipeline orchestrated with Apache Airflow and Docker Compose.
 
-
-<img width="1461" height="175" alt="Screenshot from 2026-01-04 17-08-06" src="https://github.com/user-attachments/assets/3fafb3d1-a0fe-4a0f-8bd1-1fae3a95795c" />
-
+<img width="1230" height="824" alt="image" src="https://github.com/user-attachments/assets/cd1081fc-1c82-4995-8df1-9487e0e8b5e7" />
 
 ## Description
 
